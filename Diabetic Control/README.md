@@ -1,0 +1,10 @@
+In this project I have developed, I taught the machine the data of 768 different Indian diabetic women from the Kaggle.com site. Then, when a new patient who was not on the list came with his own values, I evaluated whether this person had diabetes or not.
+
+As for the development phase of the project; 
+First of all, I installed the necessary libraries and read the dataset I received as ready. Then I assigned the target variables to the y parameter and the properties to the x_raw_data parameter. As the next step, I normalized the x_raw_data variable to make the data more easily processed by the machine and assigned the normalization result to the x variable. Then I divided the data into test and train sets. In the next step, I created the necessary variables to use the KNN model and trained the machine with the data I had. Finally, I calculated the success rate of the machine with the test set I had and printed this value on the screen.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Geliştirdiğim bu projede Kaggle.com sitesinden 768 farklı Hintli diyabetik kadının verilerini makineye öğrettim. Daha sonra listede olmayan yeni bir hasta kendi değerleriyle geldiğinde bu kişinin diyabetli olup olmadığını değerlendirdim.
+
+Projenin geliştirme aşamasına gelince; 
+Öncelikle gerekli kütüphaneleri kurdum ve hazır olarak aldığım dataset'i okudum. Ardından hedef değişkenleri y parametresine, özellikleri ise x_raw_data parametresine atadım. Bir sonraki adım olarak verinin makine tarafından daha kolay işlenebilmesi için x_raw_data değişkenini normalize ettim ve normalizasyon sonucunu x değişkenine atadım. Daha sonra verileri test ve eğitim kümelerine ayırdım. Bir sonraki adımda KNN modelini kullanmak için gerekli değişkenleri oluşturdum ve makineyi elimdeki verilerle eğittim. Son olarak elimdeki test seti ile makinenin başarı oranını hesapladım ve bu değeri ekrana yazdırdım.
