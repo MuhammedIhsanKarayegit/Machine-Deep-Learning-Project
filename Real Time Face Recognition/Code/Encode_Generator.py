@@ -3,7 +3,6 @@ import face_recognition
 import pickle
 import os
 
-
 # Importing person images
 folderImagesPath = 'Images'
 imagesPathList = os.listdir(folderImagesPath)
@@ -27,6 +26,6 @@ encodeListKnownIds = [encodeListKnown, personIdList]
 print('Encoding complete')
 
 file = open('EncodeFile.p','wb')
-pickle.dump(encodeListKnownIds,file)
+pickle.dump(encodeListKnownIds, file)
 file.close()
 print('File saved')
