@@ -4,7 +4,17 @@ import pickle
 import face_recognition
 import numpy as np
 import cvzone
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import db
+from firebase_admin import storage
 
+
+cred = credentials.Certificate("serviceAccountKey.json")
+firebase_admin.initialize_app(cred, {
+    'databaseURL': "https://faceattendacerealtime-6060d-default-rtdb.firebaseio.com/",
+    'storageBucket' : "faceattendacerealtime-6060d.appspot.com"
+})
 
 cap = cv.VideoCapture(0)
 cap.set(3, 640) # set video width
